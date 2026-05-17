@@ -2,70 +2,114 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <header className="px-4 py-4 sticky top-0 z-50 bg-[#FFFCF8] border-b border-[#F1D8C8] sm:px-6 lg:px-8">
-      <div className="mx-auto w-full max-w-6xl flex items-center justify-between">
-        <Link href="/">
-          <span className="flex items-center gap-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-[#B65A3C]"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
-              focusable="false"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 8c0-1 1-1 1-2"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 7c0-1 1-1 1-2"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 8c0-1 1-1 1-2"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13c-2 0-2 3 0 3"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 13c2 0 2 3 0 3"
-              />
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 11h12l-2 7H8l-2-7z"
-              />
-            </svg>
-            <span className="inline-flex items-baseline gap-1 text-xl font-extrabold tracking-[-0.04em] text-[#3A2418]">
-              <span className="font-[family-name:var(--font-kaushan-script)] tracking-normal">
-                Karibu
-              </span>
-              <span className="text-sm font-semibold tracking-[0.08em] uppercase">
-                Kitchen
+    <>
+      <header className="px-4 py-4 sticky top-0 z-50 bg-[#FFFCF8] border-b border-[#F1D8C8] sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-6xl flex items-center justify-between">
+          <Link href="/">
+            <span className="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-[#B65A3C]"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 8c0-1 1-1 1-2"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 7c0-1 1-1 1-2"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 8c0-1 1-1 1-2"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13c-2 0-2 3 0 3"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 13c2 0 2 3 0 3"
+                />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 11h12l-2 7H8l-2-7z"
+                />
+              </svg>
+              <span className="inline-flex items-baseline gap-1 text-xl font-extrabold tracking-[-0.04em] text-[#3A2418]">
+                <span className="font-[family-name:var(--font-kaushan-script)] tracking-normal">
+                  Karibu
+                </span>
+                <span className="text-sm font-semibold tracking-[0.08em] uppercase">
+                  Kitchen
+                </span>
               </span>
             </span>
-          </span>
-        </Link>
-        <button className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2">
-          Book a Table
-        </button>
-      </div>
-    </header>
+          </Link>
+          <button className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2">
+            Book a Table
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <div className="min-h-[70vh] bg-[#3A2418] text-white flex flex-col items-center justify-center gap-4">
+            <div className="max-w-xl px-4 py-16 sm:py-20 text-center flex flex-col items-center gap-4">
+              <p className="text-5xl font-[family-name:var(--font-kaushan-script)] text-[#FFFCF8]">
+                Karibu!
+              </p>
+              <p className="text-sm font-medium tracking-[0.14em] uppercase text-[#D99A3D]">
+                Welcome to Karibu Kitchen.
+              </p>
+              <p className="max-w-md text-base leading-7 text-white/85">
+                Warm spices. Bold flavors. East African hospitality.
+              </p>
+              <div className="flex flex-col gap-3 items-center sm:flex-row">
+                <a
+                  href="#booking"
+                  className="rounded-full bg-[#B65A3C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors"
+                >
+                  Book a Table
+                </a>
+                <a
+                  href="#menu"
+                  className="rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white hover:bg-white hover:text-[#3A2418] transition-colors"
+                >
+                  View Menu
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto max-w-3xl px-4 py-14 text-center">
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#3A2418]">
+              Discover the taste of Kenya and Tanzania
+            </h1>
+            <p className="mt-4 text-base leading-7 text-[#5C4033]">
+              Karibu Kitchen brings together comforting stews, vibrant spices,
+              grilled favorites, and warm hospitality inspired by the kitchens
+              of Kenya and Tanzania.
+            </p>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }
