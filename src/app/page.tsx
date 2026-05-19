@@ -63,9 +63,12 @@ export default function Home() {
               </span>
             </span>
           </Link>
-          <button className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2">
+          <a
+            href="#booking"
+            className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2"
+          >
             Book a Table
-          </button>
+          </a>
         </div>
       </header>
 
@@ -121,7 +124,7 @@ export default function Home() {
                   Opening Hours
                 </h3>
                 <p className="text-base font-medium text-[#3A2418]">
-                  09:00 AM - 11:00 PM
+                  15:00 - 23:00
                 </p>
               </li>
               <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFFCF8] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
@@ -129,7 +132,7 @@ export default function Home() {
                   Location
                 </h3>
                 <p className="text-base font-medium text-[#3A2418]">
-                  123 Main Street, Nairobi
+                  Södermalm, Stockholm
                 </p>
               </li>
               <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFFCF8] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
@@ -137,7 +140,7 @@ export default function Home() {
                   Contact
                 </h3>
                 <p className="text-base font-medium text-[#3A2418]">
-                  +254 700 123 456
+                  +46 70 123 45 67
                 </p>
               </li>
             </ul>
