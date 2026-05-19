@@ -52,6 +52,14 @@ export default function MenuSection() {
             </div>
           </div>
         </div>
+        <div className="mt-8 flex justify-center">
+          <a
+            href="/menu"
+            className="rounded-full bg-[#B65A3C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
+          >
+            View full menu
+          </a>
+        </div>
       </div>
     </section>
   );

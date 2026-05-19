@@ -18,13 +18,13 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-3 sm:items-end">
           <a
-            href="#menu"
+            href="/menu"
             className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418] rounded-sm"
           >
             View Menu
           </a>
           <a
-            href="#booking"
+            href="/#booking"
             className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418] rounded-sm"
           >
             Book a Table
