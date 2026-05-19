@@ -65,7 +65,7 @@ export default function Home() {
           </Link>
           <a
             href="#booking"
-            className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2"
+            className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
           >
             Book a Table
           </a>
@@ -73,7 +73,7 @@ export default function Home() {
       </header>
 
       <main>
-        <section>
+        <section id="home">
           <div className="min-h-[70vh] bg-[#3A2418] text-white flex flex-col items-center justify-center gap-4">
             <div className="max-w-xl px-4 py-16 sm:py-20 text-center flex flex-col items-center gap-4">
               <p className="text-5xl font-[family-name:var(--font-kaushan-script)] text-[#FFFCF8]">
@@ -88,13 +88,13 @@ export default function Home() {
               <div className="flex flex-col gap-3 items-center sm:flex-row">
                 <a
                   href="#booking"
-                  className="rounded-full bg-[#B65A3C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors"
+                  className="rounded-full bg-[#B65A3C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
                 >
                   Book a Table
                 </a>
                 <a
                   href="#menu"
-                  className="rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white hover:bg-white hover:text-[#3A2418] transition-colors"
+                  className="rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white hover:bg-white hover:text-[#3A2418] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
                 >
                   View Menu
                 </a>
@@ -340,13 +340,13 @@ export default function Home() {
           <div className="flex flex-col gap-3 sm:items-end">
             <a
               href="#menu"
-              className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors"
+              className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418] rounded-sm"
             >
               View Menu
             </a>
             <a
               href="#booking"
-              className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors"
+              className="text-sm font-medium text-[#FFFCF8] hover:text-[#D99A3D] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418] rounded-sm"
             >
               Book a Table
             </a>
