@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MenuItemCard from "../components/MenuItemCard";
 
 export default function Menu() {
   return (
@@ -49,51 +50,21 @@ export default function Menu() {
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
-              <div className="overflow-hidden rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] shadow-sm">
-                <div className="h-44 bg-[#B65A3C]/20 border-b border-[#F1D8C8]"></div>
-                <div className="p-5 flex flex-col gap-3">
-                  <h3 className="text-lg font-bold text-[#3A2418]">
-                    Nyama Choma
-                  </h3>
-                  <p className="text-sm leading-6 text-[#5C4033]">
-                    Grilled meat served with traditional sides.
-                  </p>
-                  <span className="text-base font-semibold text-[#B65A3C]">
-                    130kr
-                  </span>
-                </div>
-              </div>
-
-              <div className="overflow-hidden rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] shadow-sm">
-                <div className="h-44 bg-[#B65A3C]/20 border-b border-[#F1D8C8]"></div>
-                <div className="p-5 flex flex-col gap-3">
-                  <h3 className="text-lg font-bold text-[#3A2418]">
-                    Ugali na Sukuma Wiki
-                  </h3>
-                  <p className="text-sm leading-6 text-[#5C4033]">
-                    A comforting East African classic with maize meal and
-                    sautéed greens.
-                  </p>
-                  <span className="text-base font-semibold text-[#B65A3C]">
-                    120kr
-                  </span>
-                </div>
-              </div>
-
-              <div className="overflow-hidden rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] shadow-sm">
-                <div className="h-44 bg-[#B65A3C]/20 border-b border-[#F1D8C8]"></div>
-                <div className="p-5 flex flex-col gap-3">
-                  <h3 className="text-lg font-bold text-[#3A2418]">
-                    Pilau Rice
-                  </h3>
-                  <p className="text-sm leading-6 text-[#5C4033]">
-                    Fragrant spiced rice cooked with warm coastal flavors.
-                  </p>
-                  <span className="text-base font-semibold text-[#B65A3C]">
-                    145kr
-                  </span>
-                </div>
-              </div>
+              <MenuItemCard
+                name="Nyama Choma"
+                description="Grilled meat served with traditional sides."
+                price="130kr"
+              />
+              <MenuItemCard
+                name="Ugali na Sukuma Wiki"
+                description="A comforting East African classic with maize meal and sautéed greens."
+                price="120kr"
+              />
+              <MenuItemCard
+                name="Pilau Rice"
+                description="Fragrant spiced rice cooked with warm coastal flavors."
+                price="145kr"
+              />
             </div>
           </div>
         </section>
