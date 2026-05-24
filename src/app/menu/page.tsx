@@ -2,6 +2,25 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MenuItemCard from "../components/MenuItemCard";
 
+const menuItems = [
+  {
+    name: "Nyama Choma",
+    description: "Grilled meat served with traditional sides.",
+    price: "130kr",
+  },
+  {
+    name: "Ugali na Sukuma Wiki",
+    description:
+      "A comforting East African classic with maize meal and sautéed greens.",
+    price: "120kr",
+  },
+  {
+    name: "Pilau Rice",
+    description: "Fragrant spiced rice cooked with warm coastal flavors.",
+    price: "145kr",
+  },
+];
+
 export default function Menu() {
   return (
     <>
@@ -50,21 +69,14 @@ export default function Menu() {
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
-              <MenuItemCard
-                name="Nyama Choma"
-                description="Grilled meat served with traditional sides."
-                price="130kr"
-              />
-              <MenuItemCard
-                name="Ugali na Sukuma Wiki"
-                description="A comforting East African classic with maize meal and sautéed greens."
-                price="120kr"
-              />
-              <MenuItemCard
-                name="Pilau Rice"
-                description="Fragrant spiced rice cooked with warm coastal flavors."
-                price="145kr"
-              />
+              {menuItems.map((item) => (
+                <MenuItemCard
+                  key={item.name}
+                  name={item.name}
+                  description={item.description}
+                  price={item.price}
+                />
+              ))}
             </div>
           </div>
         </section>
