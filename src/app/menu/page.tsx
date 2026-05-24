@@ -21,6 +21,14 @@ const menuItems = [
   },
 ];
 
+const menuCategories = [
+  "Signature Dishes",
+  "Grilled Favorites",
+  "Stews & Comfort",
+  "Sides",
+  "Drinks",
+];
+
 export default function Menu() {
   return (
     <>
@@ -36,36 +44,18 @@ export default function Menu() {
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              <button
-                type="button"
-                className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-semibold text-white focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
-              >
-                Signature Dishes
-              </button>
-              <button
-                type="button"
-                className="rounded-full border border-[#F1D8C8] px-4 py-2 text-sm font-semibold text-[#3A2418] hover:bg-[#FFF8F1] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
-              >
-                Grilled Favorites
-              </button>
-              <button
-                type="button"
-                className="rounded-full border border-[#F1D8C8] px-4 py-2 text-sm font-semibold text-[#3A2418] hover:bg-[#FFF8F1] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
-              >
-                Stews & Comfort
-              </button>
-              <button
-                type="button"
-                className="rounded-full border border-[#F1D8C8] px-4 py-2 text-sm font-semibold text-[#3A2418] hover:bg-[#FFF8F1] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
-              >
-                Sides
-              </button>
-              <button
-                type="button"
-                className="rounded-full border border-[#F1D8C8] px-4 py-2 text-sm font-semibold text-[#3A2418] hover:bg-[#FFF8F1] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8]"
-              >
-                Drinks
-              </button>
+              {menuCategories.map((category) => {
+                const isActive = category === "Signature Dishes";
+                return (
+                  <button
+                    key={category}
+                    type="button"
+                    className={`rounded-full px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] ${isActive ? "bg-[#B65A3C] text-white" : "border border-[#F1D8C8] text-[#3A2418] hover:bg-[#FFF8F1] transition-colors"}`}
+                  >
+                    {category}
+                  </button>
+                );
+              })}
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
