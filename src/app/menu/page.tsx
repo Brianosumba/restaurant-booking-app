@@ -1,23 +1,40 @@
+"use client";
+import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import MenuItemCard from "../components/MenuItemCard";
 
 const menuItems = [
   {
+    category: "Grilled Favorites",
     name: "Nyama Choma",
     description: "Grilled meat served with traditional sides.",
     price: "130kr",
   },
   {
+    category: "Signature Dishes",
     name: "Ugali na Sukuma Wiki",
     description:
       "A comforting East African classic with maize meal and sautéed greens.",
     price: "120kr",
   },
   {
+    category: "Stews & Comfort",
     name: "Pilau Rice",
     description: "Fragrant spiced rice cooked with warm coastal flavors.",
     price: "145kr",
+  },
+  {
+    category: "Sides",
+    name: "Chapati",
+    description: "Soft East African flatbread served warm.",
+    price: "35kr",
+  },
+  {
+    category: "Drinks",
+    name: "Tangawizi",
+    description: "A refreshing ginger soda with a bold kick.",
+    price: "35kr",
   },
 ];
 
@@ -30,6 +47,11 @@ const menuCategories = [
 ];
 
 export default function Menu() {
+  const [activeCategory, setActiveCategory] = useState("Signature Dishes");
+  const filteredMenuItems = menuItems.filter(
+    (item) => item.category === activeCategory,
+  );
+
   return (
     <>
       <Header />
@@ -45,12 +67,13 @@ export default function Menu() {
 
             <div className="mt-8 flex flex-wrap gap-3">
               {menuCategories.map((category) => {
-                const isActive = category === "Signature Dishes";
+                const isActive = category === activeCategory;
                 return (
                   <button
                     key={category}
                     type="button"
                     className={`rounded-full px-4 py-2 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] ${isActive ? "bg-[#B65A3C] text-white" : "border border-[#F1D8C8] text-[#3A2418] hover:bg-[#FFF8F1] transition-colors"}`}
+                    onClick={() => setActiveCategory(category)}
                   >
                     {category}
                   </button>
@@ -59,7 +82,7 @@ export default function Menu() {
             </div>
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
-              {menuItems.map((item) => (
+              {filteredMenuItems.map((item) => (
                 <MenuItemCard
                   key={item.name}
                   name={item.name}
