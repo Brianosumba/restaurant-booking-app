@@ -10,16 +10,19 @@ export default function MenuSection() {
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           <MenuItemCard
+            imageLabel="Ugali na Sukuma Wiki"
             name="Ugali na Sukuma Wiki"
             description="A traditional East African dish made with maize flour and leafy greens."
             price="120kr"
           />
           <MenuItemCard
+            imageLabel="Nyama Choma"
             name="Nyama Choma"
             description="Grilled meat seasoned with traditional East African spices."
             price="150kr"
           />
           <MenuItemCard
+            imageLabel="Chapati & Nyama"
             name="Chapati & Nyama"
             description="Soft flatbread served with tender grilled meat and aromatic sauces."
             price="130kr"
