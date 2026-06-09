@@ -1,4 +1,19 @@
 export default function AboutSection() {
+  const aboutHighlights = [
+    {
+      label: "Kenya & Tanzania",
+      text: "Inspired flavours",
+    },
+    {
+      label: "Karibu spirit",
+      text: "Warm hospitality",
+    },
+    {
+      label: "Stockholm",
+      text: "Made locally",
+    },
+  ];
+
   return (
     <section id="about" className="bg-[#FFF8F1] px-4 py-16">
       <div className="mx-auto max-w-6xl">
@@ -22,32 +37,19 @@ export default function AboutSection() {
             </p>
 
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-2xl border border-[#E7D3C3] bg-white/70 p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  Kenya & Tanzania
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[#3A2418]">
-                  Inspired flavours
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#E7D3C3] bg-white/70 p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  Karibu spirit
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[#3A2418]">
-                  Warm hospitality
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#E7D3C3] bg-white/70 p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  Stockholm
-                </p>
-                <p className="mt-2 text-sm font-semibold text-[#3A2418]">
-                  Made locally
-                </p>
-              </div>
+              {aboutHighlights.map((highlight) => (
+                <div
+                  className="rounded-2xl border border-[#E7D3C3] bg-white/70 p-4"
+                  key={highlight.label}
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
+                    {highlight.label}
+                  </p>
+                  <p className="mt-2 text-sm font-semibold text-[#3A2418]">
+                    {highlight.text}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
