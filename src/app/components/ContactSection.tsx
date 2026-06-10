@@ -17,6 +17,9 @@ export default function ContactSection() {
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-3">
               <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
+                  01
+                </span>
                 <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
                   General questions
                 </h3>
@@ -25,6 +28,9 @@ export default function ContactSection() {
                 </p>
               </li>
               <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
+                  02
+                </span>
                 <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
                   Events & catering
                 </h3>
@@ -33,6 +39,9 @@ export default function ContactSection() {
                 </p>
               </li>
               <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
+                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
+                  03
+                </span>
                 <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
                   Group bookings
                 </h3>
