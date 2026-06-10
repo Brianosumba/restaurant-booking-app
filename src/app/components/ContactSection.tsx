@@ -9,9 +9,17 @@ export default function ContactSection() {
     message: "",
   });
 
+  const [isContactSubmitted, setIsContactSubmitted] = useState(false);
+
   const handleContactSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Contact form submitted:", contactForm);
+    setIsContactSubmitted(true);
+    setContactForm({
+      name: "",
+      email: "",
+      inquiryType: "",
+      message: "",
+    });
   };
 
   return (
@@ -175,6 +183,11 @@ export default function ContactSection() {
               >
                 Send inquiry
               </button>
+              {isContactSubmitted && (
+                <p className="rounded-2xl bg-[#B65A3C]/10 px-4 py-3 text-sm font-medium text-[#3A2418]">
+                  Thank you! Your inquiry has been received.
+                </p>
+              )}
             </form>
           </div>
         </div>
