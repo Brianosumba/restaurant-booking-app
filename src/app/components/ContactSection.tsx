@@ -25,6 +25,24 @@ export default function ContactSection() {
     }, 3000);
   };
 
+  const contactInquiryCards = [
+    {
+      number: "01",
+      title: "General questions",
+      description: "Menu, allergies, opening hours or table questions.",
+    },
+    {
+      number: "02",
+      title: "Events & catering",
+      description: "Weddings, birthdays, graduations and private dinners.",
+    },
+    {
+      number: "03",
+      title: "Group bookings",
+      description: "Larger dinners with family, friends or colleagues.",
+    },
+  ];
+
   return (
     <section id="contact" className="bg-[#FFFCF8] px-4 py-16">
       <div className="mx-auto max-w-6xl">
@@ -42,39 +60,22 @@ export default function ContactSection() {
               birthday or private dinner, we’d love to hear from you.
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-3">
-              <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
-                  01
-                </span>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  General questions
-                </h3>
-                <p className="text-base font-medium text-[#3A2418]">
-                  Menu, allergies, opening hours or table questions.
-                </p>
-              </li>
-              <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
-                  02
-                </span>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  Events & catering
-                </h3>
-                <p className="text-base font-medium text-[#3A2418]">
-                  Weddings, birthdays, graduations and private dinners.
-                </p>
-              </li>
-              <li className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm">
-                <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
-                  03
-                </span>
-                <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
-                  Group bookings
-                </h3>
-                <p className="text-base font-medium text-[#3A2418]">
-                  Larger dinners with family, friends or colleagues.
-                </p>
-              </li>
+              {contactInquiryCards.map((card) => (
+                <li
+                  className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm"
+                  key={card.number}
+                >
+                  <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
+                    {card.number}
+                  </span>
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
+                    {card.title}
+                  </h3>
+                  <p className="text-base font-medium text-[#3A2418]">
+                    {card.description}
+                  </p>
+                </li>
+              ))}
             </ul>
           </div>
 
