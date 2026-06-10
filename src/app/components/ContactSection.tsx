@@ -1,4 +1,19 @@
+"use client";
+import { useState } from "react";
+
 export default function ContactSection() {
+  const [contactForm, setContactForm] = useState({
+    name: "",
+    email: "",
+    inquiryType: "",
+    message: "",
+  });
+
+  const handleContactSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log("Contact form submitted:", contactForm);
+  };
+
   return (
     <section id="contact" className="bg-[#FFFCF8] px-4 py-16">
       <div className="mx-auto max-w-6xl">
@@ -60,7 +75,7 @@ export default function ContactSection() {
               Tell us what you’re planning or what you need help with, and our
               team will get back to you.
             </p>
-            <form className="mt-6 space-y-4">
+            <form className="mt-6 space-y-4" onSubmit={handleContactSubmit}>
               <div className="space-y-2">
                 <label
                   htmlFor="name"
@@ -69,12 +84,16 @@ export default function ContactSection() {
                   Your name
                 </label>
                 <input
+                  value={contactForm.name}
                   className="w-full rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Your name"
                   required
+                  onChange={(event) =>
+                    setContactForm({ ...contactForm, name: event.target.value })
+                  }
                 />
               </div>
               <div className="space-y-2">
@@ -85,12 +104,19 @@ export default function ContactSection() {
                   Email address
                 </label>
                 <input
+                  value={contactForm.email}
                   className="w-full rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
                   type="email"
                   id="email"
                   name="email"
                   placeholder="you@example.com"
                   required
+                  onChange={(event) =>
+                    setContactForm({
+                      ...contactForm,
+                      email: event.target.value,
+                    })
+                  }
                 />
               </div>
               <div className="space-y-2">
@@ -101,10 +127,17 @@ export default function ContactSection() {
                   Inquiry type
                 </label>
                 <select
+                  value={contactForm.inquiryType}
                   id="inquiryType"
                   name="inquiryType"
                   required
                   className="w-full rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
+                  onChange={(event) =>
+                    setContactForm({
+                      ...contactForm,
+                      inquiryType: event.target.value,
+                    })
+                  }
                 >
                   <option value="">Select inquiry type</option>
                   <option value="general">General questions</option>
@@ -121,11 +154,18 @@ export default function ContactSection() {
                   Message
                 </label>
                 <textarea
+                  value={contactForm.message}
                   id="message"
                   name="message"
                   placeholder="Tell us what you’re planning or what you need help with"
                   rows={4}
                   className="w-full resize-none rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
+                  onChange={(event) =>
+                    setContactForm({
+                      ...contactForm,
+                      message: event.target.value,
+                    })
+                  }
                   required
                 ></textarea>
               </div>
