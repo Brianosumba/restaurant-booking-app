@@ -29,6 +29,18 @@ export default function ContactSection() {
 
   const [isContactSubmitted, setIsContactSubmitted] = useState(false);
 
+  const handleContactChange = (
+    event: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
+  ) => {
+    const { name, value } = event.target;
+    setContactForm((prevForm) => ({
+      ...prevForm,
+      [name]: value,
+    }));
+  };
+
   const handleContactSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setIsContactSubmitted(true);
@@ -103,9 +115,7 @@ export default function ContactSection() {
                   name="name"
                   placeholder="Your name"
                   required
-                  onChange={(event) =>
-                    setContactForm({ ...contactForm, name: event.target.value })
-                  }
+                  onChange={handleContactChange}
                 />
               </div>
               <div className="space-y-2">
@@ -123,12 +133,7 @@ export default function ContactSection() {
                   name="email"
                   placeholder="you@example.com"
                   required
-                  onChange={(event) =>
-                    setContactForm({
-                      ...contactForm,
-                      email: event.target.value,
-                    })
-                  }
+                  onChange={handleContactChange}
                 />
               </div>
               <div className="space-y-2">
@@ -144,12 +149,7 @@ export default function ContactSection() {
                   name="inquiryType"
                   required
                   className="w-full rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
-                  onChange={(event) =>
-                    setContactForm({
-                      ...contactForm,
-                      inquiryType: event.target.value,
-                    })
-                  }
+                  onChange={handleContactChange}
                 >
                   <option value="">Select inquiry type</option>
                   <option value="general">General questions</option>
@@ -172,12 +172,7 @@ export default function ContactSection() {
                   placeholder="Tell us what you’re planning or what you need help with"
                   rows={4}
                   className="w-full resize-none rounded-2xl border border-[#E7D3C3] bg-[#FFFCF8] px-4 py-3 text-sm text-[#3A2418] outline-none transition focus:border-[#B65A3C] focus:ring-2 focus:ring-[#B65A3C]/20"
-                  onChange={(event) =>
-                    setContactForm({
-                      ...contactForm,
-                      message: event.target.value,
-                    })
-                  }
+                  onChange={handleContactChange}
                   required
                 ></textarea>
               </div>
