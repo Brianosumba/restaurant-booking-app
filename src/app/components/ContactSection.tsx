@@ -1,6 +1,24 @@
 "use client";
 import { useState } from "react";
 
+const contactInquiryCards = [
+  {
+    number: "01",
+    title: "General questions",
+    description: "Menu, allergies, opening hours or table questions.",
+  },
+  {
+    number: "02",
+    title: "Events & catering",
+    description: "Weddings, birthdays, graduations and private dinners.",
+  },
+  {
+    number: "03",
+    title: "Group bookings",
+    description: "Larger dinners with family, friends or colleagues.",
+  },
+];
+
 export default function ContactSection() {
   const [contactForm, setContactForm] = useState({
     name: "",
@@ -24,24 +42,6 @@ export default function ContactSection() {
       setIsContactSubmitted(false);
     }, 3000);
   };
-
-  const contactInquiryCards = [
-    {
-      number: "01",
-      title: "General questions",
-      description: "Menu, allergies, opening hours or table questions.",
-    },
-    {
-      number: "02",
-      title: "Events & catering",
-      description: "Weddings, birthdays, graduations and private dinners.",
-    },
-    {
-      number: "03",
-      title: "Group bookings",
-      description: "Larger dinners with family, friends or colleagues.",
-    },
-  ];
 
   return (
     <section id="contact" className="bg-[#FFFCF8] px-4 py-16">

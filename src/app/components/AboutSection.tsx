@@ -1,19 +1,19 @@
-export default function AboutSection() {
-  const aboutHighlights = [
-    {
-      label: "Kenya & Tanzania",
-      text: "Inspired flavours",
-    },
-    {
-      label: "Karibu spirit",
-      text: "Warm hospitality",
-    },
-    {
-      label: "Stockholm",
-      text: "Made locally",
-    },
-  ];
+const aboutHighlights = [
+  {
+    label: "Kenya & Tanzania",
+    text: "Inspired flavours",
+  },
+  {
+    label: "Karibu spirit",
+    text: "Warm hospitality",
+  },
+  {
+    label: "Stockholm",
+    text: "Made locally",
+  },
+];
 
+export default function AboutSection() {
   return (
     <section id="about" className="bg-[#FFF8F1] px-4 py-16">
       <div className="mx-auto max-w-6xl">
