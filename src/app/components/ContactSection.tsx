@@ -20,6 +20,9 @@ export default function ContactSection() {
       inquiryType: "",
       message: "",
     });
+    setTimeout(() => {
+      setIsContactSubmitted(false);
+    }, 3000);
   };
 
   return (
@@ -75,7 +78,7 @@ export default function ContactSection() {
             </ul>
           </div>
 
-          <div className="rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm">
+          <div className="relative rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm">
             <h3 className="text-xl font-bold text-[#3A2418]">
               Send us an inquiry
             </h3>
@@ -183,12 +186,18 @@ export default function ContactSection() {
               >
                 Send inquiry
               </button>
-              {isContactSubmitted && (
-                <p className="rounded-2xl bg-[#B65A3C]/10 px-4 py-3 text-sm font-medium text-[#3A2418]">
-                  Thank you! Your inquiry has been received.
-                </p>
-              )}
             </form>
+            {isContactSubmitted && (
+              <div className="absolute inset-0 flex items-center justify-center rounded-3xl bg-white/70 p-6 backdrop-blur-sm">
+                <div className="rounded-2xl border border-[#E7D3C3] bg-[#FFF8F1] px-5 py-4 text-center shadow-lg">
+                  <p className="text-sm font-bold text-[#3A2418]">Thank you!</p>
+                  <p className="mt-1 text-sm text-[#5C4033]">
+                    Your inquiry has been received. We will get back to you as
+                    soon as possible.
+                  </p>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
