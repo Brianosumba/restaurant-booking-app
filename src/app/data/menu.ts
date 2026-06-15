@@ -1,5 +1,6 @@
 export const menuItems = [
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Kenyan Pilau",
     category: "Signature Dishes",
     name: "Kenyan Pilau",
@@ -8,6 +9,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Zanzibar Biryani",
     category: "Signature Dishes",
     name: "Zanzibar Biryani",
@@ -16,6 +18,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Kuku Paka",
     category: "Signature Dishes",
     name: "Kuku Paka",
@@ -24,6 +27,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Chapati & Nyama",
     category: "Signature Dishes",
     name: "Chapati & Nyama",
@@ -32,6 +36,7 @@ export const menuItems = [
     price: "130kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Ugali na Sukuma Wiki",
     category: "Signature Dishes",
     name: "Ugali na Sukuma Wiki",
@@ -41,6 +46,7 @@ export const menuItems = [
   },
 
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Nyama Choma",
     category: "Grilled Favorites",
     name: "Nyama Choma",
@@ -49,6 +55,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Mishkaki",
     category: "Grilled Favorites",
     name: "Mishkaki",
@@ -57,6 +64,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Kuku Choma",
     category: "Grilled Favorites",
     name: "Kuku Choma",
@@ -65,6 +73,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Grilled Lamb Skewers",
     category: "Grilled Favorites",
     name: "Grilled Lamb Skewers",
@@ -73,6 +82,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Grilled Tilapia",
     category: "Grilled Favorites",
     name: "Grilled Tilapia",
@@ -82,6 +92,7 @@ export const menuItems = [
   },
 
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Beef Stew",
     category: "Stews & Comfort",
     name: "Beef Stew",
@@ -90,6 +101,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Goat Curry",
     category: "Stews & Comfort",
     name: "Goat Curry",
@@ -98,6 +110,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Mchuzi Wa Samaki",
     category: "Stews & Comfort",
     name: "Mchuzi Wa Samaki",
@@ -106,6 +119,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Ndengu Stew",
     category: "Stews & Comfort",
     name: "Ndengu Stew",
@@ -114,6 +128,7 @@ export const menuItems = [
     price: "135kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Maharage Ya Nazi",
     category: "Stews & Comfort",
     name: "Maharage Ya Nazi",
@@ -122,6 +137,7 @@ export const menuItems = [
     price: "135kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Ugali",
     category: "Sides",
     name: "Ugali",
@@ -130,6 +146,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Chapati",
     category: "Sides",
     name: "Chapati",
@@ -138,6 +155,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Bhajia",
     category: "Sides",
     name: "Bhajia",
@@ -146,6 +164,7 @@ export const menuItems = [
     price: "55kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Mandazi",
     category: "Sides",
     name: "Mandazi",
@@ -153,6 +172,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Wali Wa Nazi",
     category: "Sides",
     name: "Wali Wa Nazi",
@@ -161,6 +181,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Tangawizi",
     category: "Drinks",
     name: "Tangawizi",
@@ -169,6 +190,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Passion Fruit Juice",
     category: "Drinks",
     name: "Passion Fruit Juice",
@@ -177,6 +199,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Mango Juice",
     category: "Drinks",
     name: "Mango Juice",
@@ -184,6 +207,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Hibiscus Iced Tea",
     category: "Drinks",
     name: "Hibiscus Iced Tea",
@@ -191,6 +215,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
+    image: "/images/menu/menu-placeholder.png",
     imageLabel: "Image of Spiced Chai",
     category: "Drinks",
     name: "Spiced Chai",

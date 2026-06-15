@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 type MenuItemCardProps = {
+  image: string;
   imageLabel: string;
   name: string;
   description: string;
@@ -6,6 +9,7 @@ type MenuItemCardProps = {
 };
 
 export default function MenuItemCard({
+  image,
   imageLabel,
   name,
   description,
@@ -13,8 +17,14 @@ export default function MenuItemCard({
 }: MenuItemCardProps) {
   return (
     <div className="overflow-hidden rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] shadow-sm">
-      <div className="h-44 bg-[#B65A3C]/20 border-b border-[#F1D8C8] flex items-center justify-center text-sm font-medium text-[#B65A3C]">
-        {imageLabel}
+      <div className="relative h-44 border-b border-[#F1D8C8]">
+        <Image
+          src={image}
+          alt={imageLabel}
+          fill
+          className="object-cover"
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+        />
       </div>
       <div className="p-5 flex flex-col gap-3">
         <h3 className="text-lg font-bold text-[#3A2418]">{name}</h3>

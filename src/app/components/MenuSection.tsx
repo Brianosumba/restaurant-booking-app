@@ -1,6 +1,17 @@
 import MenuItemCard from "./MenuItemCard";
+import { menuItems } from "../data/menu";
 
 export default function MenuSection() {
+  const previewMenuItemNames = [
+    "Ugali na Sukuma Wiki",
+    "Nyama Choma",
+    "Chapati & Nyama",
+  ];
+
+  const previewMenuItems = menuItems.filter((item) =>
+    previewMenuItemNames.includes(item.name),
+  );
+
   return (
     <section id="menu" className="bg-[#FFFCF8] px-4 py-16">
       <div className="mx-auto max-w-6xl">
@@ -9,24 +20,16 @@ export default function MenuSection() {
         </h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <MenuItemCard
-            imageLabel="Ugali na Sukuma Wiki"
-            name="Ugali na Sukuma Wiki"
-            description="A traditional East African dish made with maize flour and leafy greens."
-            price="120kr"
-          />
-          <MenuItemCard
-            imageLabel="Nyama Choma"
-            name="Nyama Choma"
-            description="Grilled meat seasoned with traditional East African spices."
-            price="150kr"
-          />
-          <MenuItemCard
-            imageLabel="Chapati & Nyama"
-            name="Chapati & Nyama"
-            description="Soft flatbread served with tender grilled meat and aromatic sauces."
-            price="130kr"
-          />
+          {previewMenuItems.map((item) => (
+            <MenuItemCard
+              key={item.name}
+              image={item.image}
+              imageLabel={item.imageLabel}
+              name={item.name}
+              description={item.description}
+              price={item.price}
+            />
+          ))}
         </div>
         <div className="mt-8 flex justify-center">
           <a
