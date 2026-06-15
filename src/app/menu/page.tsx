@@ -35,6 +35,7 @@ export default function Menu() {
               {filteredMenuItems.map((item) => (
                 <MenuItemCard
                   key={item.name}
+                  image={item.image}
                   imageLabel={item.imageLabel}
                   name={item.name}
                   description={item.description}
