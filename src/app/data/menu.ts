@@ -27,7 +27,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/chapati na nyama.png",
     imageLabel: "Image of Chapati & Nyama",
     category: "Signature Dishes",
     name: "Chapati & Nyama",
@@ -36,7 +36,7 @@ export const menuItems = [
     price: "130kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/ugali na sukuma wiki.png",
     imageLabel: "Image of Ugali na Sukuma Wiki",
     category: "Signature Dishes",
     name: "Ugali na Sukuma Wiki",
@@ -46,7 +46,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/nyama choma.png",
     imageLabel: "Image of Nyama Choma",
     category: "Grilled Favorites",
     name: "Nyama Choma",

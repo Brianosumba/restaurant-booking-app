@@ -17,12 +17,12 @@ export default function MenuItemCard({
 }: MenuItemCardProps) {
   return (
     <div className="overflow-hidden rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] shadow-sm">
-      <div className="relative h-44 border-b border-[#F1D8C8]">
+      <div className="relative h-56 border-b border-[#F1D8C8]">
         <Image
           src={image}
           alt={imageLabel}
           fill
-          className="object-cover"
+          className="object-cover object-[center-60%]"
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
         />
       </div>
