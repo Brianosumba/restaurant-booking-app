@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/kenya pilau.png",
     imageLabel: "Image of Kenyan Pilau",
     category: "Signature Dishes",
     name: "Kenyan Pilau",
@@ -9,7 +9,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/zanzibar briyani.png",
     imageLabel: "Image of Zanzibar Biryani",
     category: "Signature Dishes",
     name: "Zanzibar Biryani",
@@ -18,7 +18,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/kuku paka.png",
     imageLabel: "Image of Kuku Paka",
     category: "Signature Dishes",
     name: "Kuku Paka",
@@ -46,7 +46,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/nyama choma.png",
+    image: "/images/menu/nyama choma (2).png",
     imageLabel: "Image of Nyama Choma",
     category: "Grilled Favorites",
     name: "Nyama Choma",
