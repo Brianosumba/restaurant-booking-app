@@ -55,7 +55,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/mishkaki.png",
     imageLabel: "Image of Mishkaki",
     category: "Grilled Favorites",
     name: "Mishkaki",
@@ -64,30 +64,30 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/kuku choma.png",
     imageLabel: "Image of Kuku Choma",
     category: "Grilled Favorites",
     name: "Kuku Choma",
     description:
-      "Chargrilled chicken with East African spice marinade and fresh salad.",
+      "Chargrilled chicken with East African spice marinade, served with fresh salad and a creamy coconut sauce infused with ginger and garlic",
     price: "155kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/lamb skewers.png",
     imageLabel: "Image of Grilled Lamb Skewers",
     category: "Grilled Favorites",
     name: "Grilled Lamb Skewers",
     description:
-      "Tender lamb skewers with smoky spices and tomato onion relish.",
+      "Tender lamb skewers with smoky East African spices, served with a rich mushroom sauce and fresh herbs.",
     price: "175kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/grilled Tilapia.png",
     imageLabel: "Image of Grilled Tilapia",
     category: "Grilled Favorites",
     name: "Grilled Tilapia",
     description:
-      "Whole grilled tilapia with lemon, herbs and mild chilli sauce.",
+      "Whole grilled tilapia with lemon, fresh herbs and a coconut lime sauce infused with garlic and ginger.",
     price: "185kr",
   },
 
