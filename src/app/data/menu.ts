@@ -92,7 +92,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/beef stew.png",
     imageLabel: "Image of Beef Stew",
     category: "Stews & Comfort",
     name: "Beef Stew",
@@ -101,7 +101,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/goat curry.png",
     imageLabel: "Image of Goat Curry",
     category: "Stews & Comfort",
     name: "Goat Curry",
@@ -110,7 +110,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/mchuzi wa samaki.png",
     imageLabel: "Image of Mchuzi Wa Samaki",
     category: "Stews & Comfort",
     name: "Mchuzi Wa Samaki",
@@ -119,16 +119,16 @@ export const menuItems = [
     price: "165kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
-    imageLabel: "Image of Ndengu Stew",
+    image: "/images/menu/matumbo.png",
+    imageLabel: "Image of Matumbo",
     category: "Stews & Comfort",
-    name: "Ndengu Stew",
+    name: "Matumbo",
     description:
-      "Green gram stew with tomato, onion, garlic, coriander and gentle spices.",
-    price: "135kr",
+      "Slow-cooked tripe in a rich tomato sauce with onion, garlic, coriander and warm East African spices.",
+    price: "145kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/mahrage ya nazi.png",
     imageLabel: "Image of Maharage Ya Nazi",
     category: "Stews & Comfort",
     name: "Maharage Ya Nazi",
@@ -137,7 +137,7 @@ export const menuItems = [
     price: "135kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/ugali.png",
     imageLabel: "Image of Ugali",
     category: "Sides",
     name: "Ugali",
@@ -146,7 +146,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/chapati.png",
     imageLabel: "Image of Chapati",
     category: "Sides",
     name: "Chapati",
@@ -155,7 +155,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/bhajia.png",
     imageLabel: "Image of Bhajia",
     category: "Sides",
     name: "Bhajia",
@@ -164,7 +164,7 @@ export const menuItems = [
     price: "55kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/mandazi.png",
     imageLabel: "Image of Mandazi",
     category: "Sides",
     name: "Mandazi",
@@ -172,7 +172,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/wali wa nazi.png",
     imageLabel: "Image of Wali Wa Nazi",
     category: "Sides",
     name: "Wali Wa Nazi",
@@ -181,7 +181,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/tangawizi.png",
     imageLabel: "Image of Tangawizi",
     category: "Drinks",
     name: "Tangawizi",
@@ -190,7 +190,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/passion.png",
     imageLabel: "Image of Passion Fruit Juice",
     category: "Drinks",
     name: "Passion Fruit Juice",
@@ -199,7 +199,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/mango.png",
     imageLabel: "Image of Mango Juice",
     category: "Drinks",
     name: "Mango Juice",
@@ -207,7 +207,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/hibiscus iced tea.png",
     imageLabel: "Image of Hibiscus Iced Tea",
     category: "Drinks",
     name: "Hibiscus Iced Tea",
@@ -215,7 +215,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/menu-placeholder.png",
+    image: "/images/menu/chai.png",
     imageLabel: "Image of Spiced Chai",
     category: "Drinks",
     name: "Spiced Chai",
