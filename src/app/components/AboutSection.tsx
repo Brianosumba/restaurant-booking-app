@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const aboutHighlights = [
   {
     label: "Kenya & Tanzania",
@@ -54,10 +56,14 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-5 rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm">
-            <div className="flex h-48 items-center justify-center rounded-2xl bg-[#D98C5F]/20">
-              <p className="text-sm font-semibold text-[#B65A3C]">
-                Warm spices & shared tables
-              </p>
+            <div className="relative h-56 overflow-hidden rounded-2xl">
+              <Image
+                src="/images/about/about-east-african-hospitality.png"
+                alt="Shared East African dining table at karibu Kitchen"
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 45vw, 100vw"
+              />
             </div>
             <h3 className="text-xl font-bold text-[#3A2418]">
               Inspired by the warmth of home
