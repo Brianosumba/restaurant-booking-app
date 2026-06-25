@@ -15,9 +15,16 @@ export default function MenuSection() {
   return (
     <section id="menu" className="bg-[#FFFCF8] px-4 py-16">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-2xl font-bold tracking-tight text-[#3A2418]">
-          Our Menu
+        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#B65A3C]">
+          Featured dishes
+        </p>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
+          A taste of Karibu Kitchen
         </h2>
+        <p className="mt-4 max-w-2xl text-base leading-7 text-[#5C4033]">
+          Explore a few guest favourites before discovering our full East
+          African-inspired menu.
+        </p>
 
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {previewMenuItems.map((item) => (
