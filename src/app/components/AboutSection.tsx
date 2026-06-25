@@ -24,7 +24,7 @@ export default function AboutSection() {
             <p className="text-sm font-semibold tracking-[0.14em] uppercase text-[#B65A3C]">
               Our Story
             </p>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-[#3A2418]">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
               A warm taste of East Africa in Stockholm
             </h2>
             <p className="mt-4 max-w-3xl text-base leading-7 text-[#5C4033]">
@@ -56,12 +56,12 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-5 rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm">
-            <div className="relative h-56 overflow-hidden rounded-2xl">
+            <div className="relative h-64 overflow-hidden rounded-2xl">
               <Image
                 src="/images/about/about-east-african-hospitality.png"
-                alt="Shared East African dining table at karibu Kitchen"
+                alt="Shared East African dining table at Karibu Kitchen"
                 fill
-                className="object-cover"
+                className="object-cover object-[center_55%]"
                 sizes="(min-width: 1024px) 45vw, 100vw"
               />
             </div>
