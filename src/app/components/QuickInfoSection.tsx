@@ -1,5 +1,3 @@
-import { title } from "process";
-
 const quickInfoItems = [
   {
     title: "Opening Hours",
@@ -17,12 +15,12 @@ const quickInfoItems = [
 
 export default function QuickInfoSection() {
   return (
-    <section className="bg-[#FFF8F1] px-4 py-14">
+    <section className="bg-[#FFF8F1] px-4 py-16">
       <div className="mx-auto max-w-6xl">
         <p className="text-sm font-semibold tracking-[0.14em] uppercase text-[#B65A3C]">
           Visit us
         </p>
-        <h2 className="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-[#3A2418]">
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
           Plan your visit to Karibu Kitchen
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-7 text-[#5C4033]">
@@ -32,7 +30,7 @@ export default function QuickInfoSection() {
         <ul className="mt-6 grid gap-4 sm:grid-cols-3">
           {quickInfoItems.map((item) => (
             <li
-              className="rounded-2xl border border-[#F1D8C8] bg-[#FFFCF8] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm"
+              className="flex flex-col gap-2 rounded-2xl border border-[#F1D8C8] bg-[#FFFCF8] p-5 text-[#3A2418] shadow-sm"
               key={item.title}
             >
               <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#B65A3C]">
