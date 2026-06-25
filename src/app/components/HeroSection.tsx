@@ -29,6 +29,9 @@ const heroSlides = [
   },
 ];
 
+const SLIDE_INTERVAL_MS = 7000;
+const TRANSITION_DURATION_MS = 1000;
+
 export default function HeroSection() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [incomingSlide, setIncomingSlide] = useState<number | null>(null);
@@ -58,8 +61,8 @@ export default function HeroSection() {
         setActiveSlide(nextIndex);
         setIncomingSlide(null);
         setIsTransitioning(false);
-      }, 1000); // Delay for fade transition
-    }, 7000); // Change slide every 7 seconds
+      }, TRANSITION_DURATION_MS);
+    }, SLIDE_INTERVAL_MS);
 
     return () => {
       clearInterval(currentInterval);
@@ -130,16 +133,17 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-
-      <div className="mx-auto max-w-3xl px-4 py-14 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#3A2418]">
-          Discover the taste of Kenya and Tanzania
-        </h2>
-        <p className="mt-4 text-base leading-7 text-[#5C4033]">
-          Karibu Kitchen brings together comforting stews, vibrant spices,
-          grilled favorites, and warm hospitality inspired by the kitchens of
-          Kenya and Tanzania.
-        </p>
+      <div className="bg-[#FFF8F1] px-4 py-16">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
+            Discover the taste of Kenya and Tanzania
+          </h2>
+          <p className="mt-4 text-base leading-7 text-[#5C4033]">
+            Karibu Kitchen brings together comforting stews, vibrant spices,
+            grilled favourites, and warm hospitality inspired by the kitchens of
+            Kenya and Tanzania.
+          </p>
+        </div>
       </div>
     </section>
   );
