@@ -63,14 +63,17 @@ export default function BookingSection() {
   return (
     <section id="booking" className="bg-[#FFF8F1] px-4 py-16">
       <div className="mx-auto max-w-3xl">
-        <h2 className="text-2xl font-bold tracking-tight text-[#3A2418]">
+        <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#B65A3C]">
+          Reservations
+        </p>
+        <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
           Book a Table
         </h2>
-        <p className="mt-3 text-base leading-7 text-[#5C4033]">
+        <p className="mt-4 max-w-2xl text-base leading-7 text-[#5C4033]">
           Choose your date, time, and party size. We’ll take care of the rest.
         </p>
         <form
-          className="mt-8 rounded-2xl border border-[#F1D8C8] bg-[#FFFCF8] p-5 shadow-sm grid gap-4"
+          className="mt-8 grid gap-4 rounded-3xl border border-[#F1D8C8] bg-[#FFFCF8] p-6 shadow-sm sm:p-8"
           onSubmit={handleBookingSubmit}
         >
           {bookingError && <BookingErrorMessage message={bookingError} />}
