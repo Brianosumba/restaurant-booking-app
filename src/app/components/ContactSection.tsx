@@ -63,7 +63,7 @@ export default function ContactSection() {
             <p className="text-sm font-semibold tracking-[0.14em] uppercase text-[#B65A3C]">
               Contact & Events
             </p>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight text-[#3A2418]">
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#3A2418] sm:text-4xl">
               Questions, catering or a special celebration?
             </h2>
             <p className="mt-4 text-base leading-7 text-[#5C4033]">
@@ -74,7 +74,7 @@ export default function ContactSection() {
             <ul className="mt-8 grid gap-4 sm:grid-cols-3">
               {contactInquiryCards.map((card) => (
                 <li
-                  className="rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] flex flex-col gap-2 shadow-sm"
+                  className="flex flex-col gap-2 rounded-2xl border border-[#F1D8C8] bg-[#FFF8F1] p-5 text-[#3A2418] shadow-sm"
                   key={card.number}
                 >
                   <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[#B65A3C]/10 text-xs font-bold text-[#B65A3C]">
@@ -91,7 +91,7 @@ export default function ContactSection() {
             </ul>
           </div>
 
-          <div className="relative rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm">
+          <div className="relative rounded-3xl border border-[#E7D3C3] bg-white p-6 shadow-sm sm:p-8">
             <h3 className="text-xl font-bold text-[#3A2418]">
               Send us an inquiry
             </h3>
@@ -178,7 +178,7 @@ export default function ContactSection() {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-full bg-[#B65A3C] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#9F4A31] focus:outline-none focus:ring-2 focus:ring-[#B65A3C]/30 focus:ring-offset-2"
+                className="w-full rounded-full bg-[#B65A3C] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#9F4A31] focus:outline-none focus:ring-2 focus:ring-[#B65A3C]/30 focus:ring-offset-2 focus:ring-offset-white"
               >
                 Send inquiry
               </button>
