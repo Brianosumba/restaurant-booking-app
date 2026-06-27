@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 
@@ -116,18 +117,18 @@ export default function HeroSection() {
               </p>
 
               <div className="flex flex-col items-center gap-3 sm:flex-row">
-                <a
+                <Link
                   href="/#booking"
                   className="rounded-full bg-[#B65A3C] px-5 py-3 text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
                 >
                   Book a Table
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/menu"
                   className="rounded-full border border-white/70 px-5 py-3 text-sm font-semibold text-white hover:bg-white hover:text-[#3A2418] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
                 >
                   View Menu
-                </a>
+                </Link>
               </div>
             </div>
           </div>

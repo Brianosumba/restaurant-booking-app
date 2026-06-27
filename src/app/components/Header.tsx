@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import Logo from "./Logo";
 
@@ -13,31 +14,31 @@ export default function Header() {
           className="hidden items-center gap-6 md:flex"
           aria-label="Main navigation"
         >
-          <a
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/menu"
           >
             Menu
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/#about"
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/#contact"
           >
             Contact
-          </a>
+          </Link>
         </nav>
-        <a
+        <Link
           href="/#booking"
           className="rounded-full bg-[#B65A3C] px-4 py-2 text-sm font-medium text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] hidden md:inline-flex"
         >
           Book a Table
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -59,34 +60,34 @@ export default function Header() {
           id="mobile-navigation"
           aria-label="Mobile navigation"
         >
-          <a
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/menu"
             onClick={() => setIsMenuOpen(false)}
           >
             Menu
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/#about"
             onClick={() => setIsMenuOpen(false)}
           >
             About
-          </a>
-          <a
+          </Link>
+          <Link
             className="text-sm font-medium text-[#3A2418] hover:text-[#B65A3C] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFFCF8] rounded-sm"
             href="/#contact"
             onClick={() => setIsMenuOpen(false)}
           >
             Contact
-          </a>
-          <a
+          </Link>
+          <Link
             className="rounded-full bg-[#B65A3C] px-4 py-2 text-center text-sm font-semibold text-white hover:bg-[#A14A2A] transition-colors focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#FFF8F1]"
             href="/#booking"
             onClick={() => setIsMenuOpen(false)}
           >
             Book a Table
-          </a>
+          </Link>
         </nav>
       )}
     </header>

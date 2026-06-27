@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#3A2418] px-4 py-10 text-[#FFFCF8]">
@@ -17,24 +19,24 @@ export default function Footer() {
           <p className="text-sm text-[#D99A3D]">Södermalm, Stockholm</p>
         </div>
         <div className="flex flex-col gap-3 sm:items-end">
-          <a
+          <Link
             href="/menu"
             className="rounded-sm text-sm font-medium text-[#FFFCF8] transition-colors hover:text-[#D99A3D] focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
           >
             View Menu
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#booking"
             className="rounded-sm text-sm font-medium text-[#FFFCF8] transition-colors hover:text-[#D99A3D] focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
           >
             Book a Table
-          </a>
-          <a
+          </Link>
+          <Link
             href="/#contact"
             className="rounded-sm text-sm font-medium text-[#FFFCF8] transition-colors hover:text-[#D99A3D] focus:outline-none focus:ring-2 focus:ring-[#D99A3D] focus:ring-offset-2 focus:ring-offset-[#3A2418]"
           >
             Contact
-          </a>
+          </Link>
 
           <p className="text-xs text-[#FFFCF8]/60">
             &copy; 2026 Karibu Kitchen. All rights reserved.
