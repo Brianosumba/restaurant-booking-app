@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    image: "/images/menu/kenya-pilau.png",
+    image: "/images/menu/kenyan-pilau.png",
     imageLabel: "Image of Kenyan Pilau",
     category: "Signature Dishes",
     name: "Kenyan Pilau",
@@ -9,7 +9,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/zanzibar-briyani.png",
+    image: "/images/menu/zanzibar-biryani.png",
     imageLabel: "Image of Zanzibar Biryani",
     category: "Signature Dishes",
     name: "Zanzibar Biryani",
@@ -27,7 +27,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/chapati-na-nyama.png",
+    image: "/images/menu/chapati-nyama.png",
     imageLabel: "Image of Chapati & Nyama",
     category: "Signature Dishes",
     name: "Chapati & Nyama",
@@ -36,7 +36,7 @@ export const menuItems = [
     price: "130kr",
   },
   {
-    image: "/images/menu/ugali-na-sukuma wiki.png",
+    image: "/images/menu/ugali-sukuma-wiki.png",
     imageLabel: "Image of Ugali na Sukuma Wiki",
     category: "Signature Dishes",
     name: "Ugali na Sukuma Wiki",
@@ -46,7 +46,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/nyama-choma (2).png",
+    image: "/images/menu/nyama-choma.png",
     imageLabel: "Image of Nyama Choma",
     category: "Grilled Favorites",
     name: "Nyama Choma",
@@ -73,7 +73,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/lamb-skewers.png",
+    image: "/images/menu/grilled-lamb-skewers.png",
     imageLabel: "Image of Grilled Lamb Skewers",
     category: "Grilled Favorites",
     name: "Grilled Lamb Skewers",
@@ -82,7 +82,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
-    image: "/images/menu/grilled-Tilapia.png",
+    image: "/images/menu/grilled-tilapia.png",
     imageLabel: "Image of Grilled Tilapia",
     category: "Grilled Favorites",
     name: "Grilled Tilapia",
@@ -128,7 +128,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/mahrage-ya-nazi.png",
+    image: "/images/menu/maharage-ya-nazi.png",
     imageLabel: "Image of Maharage Ya Nazi",
     category: "Stews & Comfort",
     name: "Maharage Ya Nazi",
@@ -190,7 +190,7 @@ export const menuItems = [
     price: "35kr",
   },
   {
-    image: "/images/menu/passion.png",
+    image: "/images/menu/passion-fruit-juice.png",
     imageLabel: "Image of Passion Fruit Juice",
     category: "Drinks",
     name: "Passion Fruit Juice",
@@ -199,7 +199,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/mango.png",
+    image: "/images/menu/mango-juice.png",
     imageLabel: "Image of Mango Juice",
     category: "Drinks",
     name: "Mango Juice",
@@ -215,7 +215,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/chai.png",
+    image: "/images/menu/spiced-chai.png",
     imageLabel: "Image of Spiced Chai",
     category: "Drinks",
     name: "Spiced Chai",
