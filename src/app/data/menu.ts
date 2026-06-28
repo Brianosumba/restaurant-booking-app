@@ -1,6 +1,6 @@
 export const menuItems = [
   {
-    image: "/images/menu/kenya pilau.png",
+    image: "/images/menu/kenya-pilau.png",
     imageLabel: "Image of Kenyan Pilau",
     category: "Signature Dishes",
     name: "Kenyan Pilau",
@@ -9,7 +9,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/zanzibar briyani.png",
+    image: "/images/menu/zanzibar-briyani.png",
     imageLabel: "Image of Zanzibar Biryani",
     category: "Signature Dishes",
     name: "Zanzibar Biryani",
@@ -18,7 +18,7 @@ export const menuItems = [
     price: "165kr",
   },
   {
-    image: "/images/menu/kuku paka.png",
+    image: "/images/menu/kuku-paka.png",
     imageLabel: "Image of Kuku Paka",
     category: "Signature Dishes",
     name: "Kuku Paka",
@@ -27,7 +27,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/chapati na nyama.png",
+    image: "/images/menu/chapati-na-nyama.png",
     imageLabel: "Image of Chapati & Nyama",
     category: "Signature Dishes",
     name: "Chapati & Nyama",
@@ -36,7 +36,7 @@ export const menuItems = [
     price: "130kr",
   },
   {
-    image: "/images/menu/ugali na sukuma wiki.png",
+    image: "/images/menu/ugali-na-sukuma wiki.png",
     imageLabel: "Image of Ugali na Sukuma Wiki",
     category: "Signature Dishes",
     name: "Ugali na Sukuma Wiki",
@@ -46,7 +46,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/nyama choma (2).png",
+    image: "/images/menu/nyama-choma (2).png",
     imageLabel: "Image of Nyama Choma",
     category: "Grilled Favorites",
     name: "Nyama Choma",
@@ -64,7 +64,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/kuku choma.png",
+    image: "/images/menu/kuku-choma.png",
     imageLabel: "Image of Kuku Choma",
     category: "Grilled Favorites",
     name: "Kuku Choma",
@@ -73,7 +73,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/lamb skewers.png",
+    image: "/images/menu/lamb-skewers.png",
     imageLabel: "Image of Grilled Lamb Skewers",
     category: "Grilled Favorites",
     name: "Grilled Lamb Skewers",
@@ -82,7 +82,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
-    image: "/images/menu/grilled Tilapia.png",
+    image: "/images/menu/grilled-Tilapia.png",
     imageLabel: "Image of Grilled Tilapia",
     category: "Grilled Favorites",
     name: "Grilled Tilapia",
@@ -92,7 +92,7 @@ export const menuItems = [
   },
 
   {
-    image: "/images/menu/beef stew.png",
+    image: "/images/menu/beef-stew.png",
     imageLabel: "Image of Beef Stew",
     category: "Stews & Comfort",
     name: "Beef Stew",
@@ -101,7 +101,7 @@ export const menuItems = [
     price: "155kr",
   },
   {
-    image: "/images/menu/goat curry.png",
+    image: "/images/menu/goat-curry.png",
     imageLabel: "Image of Goat Curry",
     category: "Stews & Comfort",
     name: "Goat Curry",
@@ -110,7 +110,7 @@ export const menuItems = [
     price: "175kr",
   },
   {
-    image: "/images/menu/mchuzi wa samaki.png",
+    image: "/images/menu/mchuzi-wa-samaki.png",
     imageLabel: "Image of Mchuzi Wa Samaki",
     category: "Stews & Comfort",
     name: "Mchuzi Wa Samaki",
@@ -128,7 +128,7 @@ export const menuItems = [
     price: "145kr",
   },
   {
-    image: "/images/menu/mahrage ya nazi.png",
+    image: "/images/menu/mahrage-ya-nazi.png",
     imageLabel: "Image of Maharage Ya Nazi",
     category: "Stews & Comfort",
     name: "Maharage Ya Nazi",
@@ -172,7 +172,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/wali wa nazi.png",
+    image: "/images/menu/wali-wa-nazi.png",
     imageLabel: "Image of Wali Wa Nazi",
     category: "Sides",
     name: "Wali Wa Nazi",
@@ -207,7 +207,7 @@ export const menuItems = [
     price: "45kr",
   },
   {
-    image: "/images/menu/hibiscus iced tea.png",
+    image: "/images/menu/hibiscus-iced-tea.png",
     imageLabel: "Image of Hibiscus Iced Tea",
     category: "Drinks",
     name: "Hibiscus Iced Tea",
