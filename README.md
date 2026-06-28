@@ -76,3 +76,7 @@ npm run build
 ## Status
 
 The frontend homepage and menu page are complete. The project currently uses frontend-only form handling for booking and contact interactions.
+
+## Live Demo
+
+[View Karibu Kitchen] https://restaurant-booking-app-dusky.vercel.app/
